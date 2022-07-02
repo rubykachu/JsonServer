@@ -4,7 +4,7 @@ function generate(ok) {
   var data = []
   if (!ok) return data;
 
-  const limitRecords = 20;
+  const limitRecords = 10;
 
   for (let id = 1; id <= limitRecords; id++) {
     let currentTime = Date.now();
