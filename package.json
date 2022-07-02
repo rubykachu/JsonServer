@@ -1,0 +1,17 @@
+{
+  "name": "faker-js",
+  "author": "Minh Tang Q.",
+  "version": "1.0.0",
+  "description": "Faker db.json",
+  "license": "MIT",
+  "scripts": {
+    "db:start": "node server.js",
+    "db:seed": "node seed.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "glob": "^8.0.3",
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {}
+}
