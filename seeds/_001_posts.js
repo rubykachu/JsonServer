@@ -4,7 +4,7 @@ function generate(ok) {
   var data = []
   if (!ok) return data;
 
-  const limitRecords = 1;
+  const limitRecords = 20;
 
   for (let id = 1; id <= limitRecords; id++) {
     let currentTime = Date.now();
@@ -16,8 +16,8 @@ function generate(ok) {
         "rectangle": faker.image.nature(640, 480),
         "square": faker.image.nature(350, 350),
       },
-      "description": faker.lorem.sentences(2),
-      "content": faker.lorem.paragraphs(50),
+      "description": faker.lorem.sentence,
+      "content": faker.lorem.paragraphs(5),
       "keywords": faker.random.words(5).split(" ").map(word => { return word.toLowerCase() }),
       "color": faker.color.human(),
       "author": {
